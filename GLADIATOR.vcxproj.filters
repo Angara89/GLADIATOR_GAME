@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="test1_S">
+      <UniqueIdentifier>{20caced0-8935-4631-a88d-9dbebd819a36}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp">
+      <Filter>test1_S</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source.cpp">
+      <Filter>test1_S</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="includes\test.h">
+      <Filter>test1_S</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
