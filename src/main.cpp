@@ -1,8 +1,9 @@
-
+#include "../includes/game.hpp"
 
 int main() {
 
-	int a = 0;
+	Game game(1920, 1080);
+	game.run();
 
 	return 0;
 }

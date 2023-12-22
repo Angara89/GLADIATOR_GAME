@@ -7,6 +7,12 @@
     <Filter Include="main\game">
       <UniqueIdentifier>{97880ab4-ba06-4b5a-81a2-420fb9040f3d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="test">
+      <UniqueIdentifier>{97d5c02d-6781-4d93-979d-7ca99731340c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="res">
+      <UniqueIdentifier>{cd85f07d-afd2-423e-bf7c-67fa15a2028c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
@@ -15,10 +21,21 @@
     <ClCompile Include="src\game.cpp">
       <Filter>main\game</Filter>
     </ClCompile>
+    <ClCompile Include="test.cpp">
+      <Filter>test</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="includes\game.hpp">
       <Filter>main\game</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="assets\arena_1.png">
+      <Filter>res</Filter>
+    </Image>
+    <Image Include="assets\khight_1.jpg">
+      <Filter>res</Filter>
+    </Image>
   </ItemGroup>
 </Project>

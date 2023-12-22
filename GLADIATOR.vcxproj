@@ -21,9 +21,14 @@
   <ItemGroup>
     <ClCompile Include="src\game.cpp" />
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="test.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="includes\game.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="assets\arena_1.png" />
+    <Image Include="assets\khight_1.jpg" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
@@ -127,7 +132,7 @@
       <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies);sfml-graphics.lib;sfml-window.lib;sfml-system.lib;</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>C:\Windows\System32\xcopy /y /d "$(ProjectDir)\lib\SFML-2.6.1\bin\*.dll" "$(OutDir)"</Command>
+      <Command>cd $(OutDir) &amp;&amp; mkdir assets &amp;&amp; C:\Windows\System32\xcopy /y /d /I  /E "$(ProjectDir)assets\*" "$(OutDir)assets\" &amp;&amp; C:\Windows\System32\xcopy /y /d "$(ProjectDir)lib\SFML-2.6.1\bin\*.dll" "$(OutDir)" </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -150,7 +155,7 @@
       <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies);sfml-graphics.lib;sfml-window.lib;sfml-system.lib;</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>C:\Windows\System32\xcopy /y /d "$(ProjectDir)\lib\SFML-2.6.1\bin\*.dll" "$(OutDir)"</Command>
+      <Command>cd $(OutDir) &amp;&amp; mkdir assets &amp;&amp; C:\Windows\System32\xcopy /y /d /I  /E "$(ProjectDir)assets\*" "$(OutDir)assets\" &amp;&amp; C:\Windows\System32\xcopy /y /d "$(ProjectDir)lib\SFML-2.6.1\bin\*.dll" "$(OutDir)" </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
