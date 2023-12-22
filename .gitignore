@@ -364,3 +364,9 @@ FodyWeavers.xsd
 
 # other file 
 .others/
+
+# build's dir
+
+x64/
+w_build/
+build/ 

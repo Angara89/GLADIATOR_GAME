@@ -1,21 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="test1_S">
-      <UniqueIdentifier>{20caced0-8935-4631-a88d-9dbebd819a36}</UniqueIdentifier>
+    <Filter Include="main">
+      <UniqueIdentifier>{bf71a825-f906-482e-9e0d-2f542ca7fce8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="main\game">
+      <UniqueIdentifier>{97880ab4-ba06-4b5a-81a2-420fb9040f3d}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
-      <Filter>test1_S</Filter>
+      <Filter>main</Filter>
     </ClCompile>
-    <ClCompile Include="src\Source.cpp">
-      <Filter>test1_S</Filter>
+    <ClCompile Include="src\game.cpp">
+      <Filter>main\game</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="includes\test.h">
-      <Filter>test1_S</Filter>
+    <ClInclude Include="includes\game.hpp">
+      <Filter>main\game</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
