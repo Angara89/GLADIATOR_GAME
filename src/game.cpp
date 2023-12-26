@@ -1,14 +1,14 @@
 #include "../includes/game.hpp"
 
 Game::Game(int w, int h)
-	: width(w), height(h)
+	: size(w, h)
 {
 	this->mainWindow = new sf::RenderWindow(sf::VideoMode(w, h), "Gladiator");
 }
 
 Game::~Game()
 {
-	delete this->mainWindow;;
+	delete this->mainWindow;
 }
 
 void Game::run()
@@ -43,6 +43,8 @@ void Game::update()
 void Game::render()
 {
 	mainWindow->clear();
-	// draw all obj on screen
+	for (auto pS : this->layers) {
+		mainWindow->draw(*pS);
+	}
 	mainWindow->display();
 }

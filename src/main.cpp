@@ -1,10 +1,19 @@
 #include "../includes/game.hpp"
+#include "../includes/InitObjects.hpp"
+#include <thread>
+
 
 int main() {
-
-	Game game(1920, 1080);
-	game.run();
-
+	InitObjects io;
+	Game* pGame = io.init_game();
+	std::thread gameTheard(
+		[&]()
+		{
+			pGame->run();
+		}
+	);
+	io.init_level("level_test", pGame);
+	gameTheard.join();
 	return 0;
 }
 

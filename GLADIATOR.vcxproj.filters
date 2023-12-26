@@ -13,6 +13,39 @@
     <Filter Include="res">
       <UniqueIdentifier>{cd85f07d-afd2-423e-bf7c-67fa15a2028c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="main\RenderSystem">
+      <UniqueIdentifier>{9fdf15b5-aadb-49fd-a812-d1e9f67eae0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="main\mainMap">
+      <UniqueIdentifier>{4af36f04-72eb-427f-b729-b3e50c0e4cab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="main\mainMap\cell">
+      <UniqueIdentifier>{6b0f7420-31dd-42c2-8cea-5d6cbb61be2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="main\mainMap\objects">
+      <UniqueIdentifier>{6f2e6a80-01e2-4721-93f7-306cee3fcfb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="main\UI">
+      <UniqueIdentifier>{f15bfd1f-b2da-4ac8-8b4c-19eb9fa50b5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="main\GameInteractionManager">
+      <UniqueIdentifier>{5776c4e3-8747-4e63-8b0d-bdfe0c8a2a97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="main\UI\UIBlock">
+      <UniqueIdentifier>{8a6592d5-400c-401b-9a3b-26674abf45e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="main\InitObjects">
+      <UniqueIdentifier>{69844634-b697-4253-aac9-715507d78033}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XML">
+      <UniqueIdentifier>{84355400-27c1-4436-a19b-d919585bf724}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XML\libForXML">
+      <UniqueIdentifier>{b178ba35-2ef8-4f52-ac30-c39d9e5d147f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XML\XMLConfigs">
+      <UniqueIdentifier>{979e20e6-eda8-4a87-bac2-a0663979b26d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
@@ -24,10 +57,46 @@
     <ClCompile Include="test.cpp">
       <Filter>test</Filter>
     </ClCompile>
+    <ClCompile Include="src\mainMap.cpp">
+      <Filter>main\mainMap</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cell.cpp">
+      <Filter>main\mainMap\cell</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\tinyxml2-master\tinyxml2.cpp">
+      <Filter>XML\libForXML</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="includes\game.hpp">
       <Filter>main\game</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\TextureManager.hpp">
+      <Filter>main\RenderSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\mainMap.hpp">
+      <Filter>main\mainMap</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\cell.hpp">
+      <Filter>main\mainMap\cell</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\Object.hpp">
+      <Filter>main\mainMap\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\GameInteractionManager.hpp">
+      <Filter>main\GameInteractionManager</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\Ui.hpp">
+      <Filter>main\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\UIBlock.hpp">
+      <Filter>main\UI\UIBlock</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\InitObjects.hpp">
+      <Filter>main\InitObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\tinyxml2-master\tinyxml2.h">
+      <Filter>XML\libForXML</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -37,5 +106,13 @@
     <Image Include="assets\khight_1.jpg">
       <Filter>res</Filter>
     </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="assets\levels.xml">
+      <Filter>XML\XMLConfigs</Filter>
+    </Xml>
+    <Xml Include="assets\config.xml">
+      <Filter>XML\XMLConfigs</Filter>
+    </Xml>
   </ItemGroup>
 </Project>

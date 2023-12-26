@@ -19,16 +19,32 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="lib\tinyxml2-master\tinyxml2.cpp" />
+    <ClCompile Include="src\cell.cpp" />
     <ClCompile Include="src\game.cpp" />
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\mainMap.cpp" />
     <ClCompile Include="test.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="includes\cell.hpp" />
     <ClInclude Include="includes\game.hpp" />
+    <ClInclude Include="includes\GameInteractionManager.hpp" />
+    <ClInclude Include="includes\InitObjects.hpp" />
+    <ClInclude Include="includes\mainMap.hpp" />
+    <ClInclude Include="includes\Object.hpp" />
+    <ClInclude Include="includes\TextureManager.hpp" />
+    <ClInclude Include="includes\Ui.hpp" />
+    <ClInclude Include="includes\UIBlock.hpp" />
+    <ClInclude Include="lib\tinyxml2-master\tinyxml2.h" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="assets\arena_1.png" />
     <Image Include="assets\khight_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="assets\config.xml" />
+    <Xml Include="assets\levels.xml" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

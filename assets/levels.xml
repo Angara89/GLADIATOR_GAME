@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<levels_>
+	<common>
+		
+	</common>
+	<levels>
+		<level_test id="1" name="Level test" difficulty="easy">
+			<description>This is the first level.</description>
+			<size cells_in_width="14" cells_in_height="14"/>
+			<cells>
+				<!--Каждая буква обозначает свою текстуру, w - water, s - sand, g-gras, r-rock и тд-->
+				<row s="w w w w w s s g g g g g g r"/>
+				<row s="w w w w s s s g g g g r r r"/>
+				<row s="w w w s s s s g g g r r r r"/>
+				<row s="s s s s s g g g g g r r r r"/>
+				<row s="s g s s s s g g g g r r r r"/>
+				<row s="g g s s s g g g g g g r r r"/>
+				<row s="g g s s s s s g g g g g g r"/>
+				<row s="w w w w w s s g g g g g g r"/>
+				<row s="w w w w s s s g g g g r r r"/>
+				<row s="w w w s s s s g g g r r r r"/>
+				<row s="s s s s s g g g g g r r r r"/>
+				<row s="s g s s s s g g g g r r r r"/>
+				<row s="g g s s s g g g g g g r r r"/>
+				<row s="g g s s s s s g g g g g g r"/>
+			</cells>
+		</level_test>
+	</levels>
+</levels_>
